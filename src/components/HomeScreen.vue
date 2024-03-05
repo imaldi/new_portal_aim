@@ -24,7 +24,7 @@
       <div v-for="article in articles" :key="article.id">
         <div class="bg-white rounded-lg overflow-hidden shadow-lg">
           <img class="w-full h-40 object-cover object-center" :src="article.urlToImage" alt="image not available" />
-          <div class="p-4">
+          <div class="bg-blue-500 p-4">
             <h5 class="text-xl font-semibold mb-2">{{ article.title }}</h5>
             <p class="text-gray-700">{{ article.description }}</p>
             <a target="_blank" :href="article.url" class="mt-2 inline-block px-4 py-2 bg-blue-500 text-white rounded">Read More</a>
@@ -65,7 +65,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import AlertComponent from "../components/AlertComponent.vue";
-
 export default defineComponent({
   name: "HomeView",
   components: {

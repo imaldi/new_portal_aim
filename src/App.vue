@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HomeScreen from './components/HomeScreen.vue'
+import "tailwindcss/tailwind.css"
 </script>
 
 <template>
